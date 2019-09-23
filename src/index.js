@@ -1,8 +1,7 @@
 import Vue from 'vue/dist/vue.js';
 
-const app = new Vue({
-  el: '#root',
-  data: {
-    message: 'Hello World!'
-  }
-});
+import App from './App.vue';
+
+new Vue({
+  render: h => h(App)
+}).$mount('#root');
