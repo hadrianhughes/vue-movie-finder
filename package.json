@@ -1,0 +1,19 @@
+{
+  "name": "vue-movie-finder",
+  "version": "0.0.0",
+  "description": "A web app for searching for movies built with Vue.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hadrian Hughes",
+  "license": "ISC"
+}
