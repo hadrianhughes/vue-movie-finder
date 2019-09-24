@@ -3,6 +3,7 @@
     <Layout
       siteHeading="Movie Finder">
       <Input @changed="changeInput" :value="input" />
+      <MovieGrid :movies="results" />
     </Layout>
   </div>
 </template>
@@ -10,6 +11,7 @@
  <script>
    import Layout from './components/Layout.vue';
    import Input from './components/Input.vue';
+   import MovieGrid from './components/MovieGrid.vue';
 
    const fetchMovies = searchTerm => new Promise((resolve, reject) => {
      fetch(`http://www.omdbapi.com/?apikey=8eff793c&s=${searchTerm}`)
@@ -24,7 +26,8 @@
      name: 'App',
      components: {
        Layout,
-       Input
+       Input,
+       MovieGrid
      },
      methods: {
        changeInput(e) {
