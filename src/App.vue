@@ -1,22 +1,31 @@
 <template>
   <div>
     <Layout
-      siteHeading="Vue Movie Finder"
-      siteSubheading="Search for a movie">
-      <p>Hello World</p>
+      siteHeading="Movie Finder">
+      <Input @changed="changeInput" :value="input" />
     </Layout>
   </div>
 </template>
 
  <script>
    import Layout from './components/Layout.vue';
+   import Input from './components/Input.vue';
 
    export default {
      name: 'App',
      components: {
-       Layout
-     }
-   }
+       Layout,
+       Input
+     },
+     methods: {
+       changeInput: function(e) {
+         this.input = e.target.value;
+       }
+     },
+     data: () => ({
+       input: ''
+     })
+   };
  </script>
 
 <style>

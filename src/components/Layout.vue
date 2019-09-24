@@ -2,7 +2,6 @@
   <div>
     <header>
       <h1>{{ siteHeading }}</h1>
-      <p>{{ siteSubheading }}</p>
     </header>
     <main>
       <slot />
@@ -17,10 +16,6 @@
       siteHeading: {
         type: String,
         required: true
-      },
-      siteSubheading: {
-        type: String,
-        required: false
       }
     }
   }
