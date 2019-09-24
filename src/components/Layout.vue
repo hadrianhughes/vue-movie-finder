@@ -1,7 +1,12 @@
 <template>
   <div>
-    <h1>{{ siteHeading }}</h1>
-    <p>{{ siteSubheading }}</p>
+    <header>
+      <h1>{{ siteHeading }}</h1>
+      <p>{{ siteSubheading }}</p>
+    </header>
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 

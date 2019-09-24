@@ -2,7 +2,9 @@
   <div>
     <Layout
       siteHeading="Vue Movie Finder"
-      siteSubheading="Search for a movie" />
+      siteSubheading="Search for a movie">
+      <p>Hello World</p>
+    </Layout>
   </div>
 </template>
 
