@@ -18,3 +18,11 @@
      }
    }
  </script>
+
+<style>
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+}
+</style>
